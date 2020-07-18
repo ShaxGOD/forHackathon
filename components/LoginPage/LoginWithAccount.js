@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-// import { SocialIcon } from 'react-native-elements'
+import { SocialIcon } from 'react-native-elements'
 
 export default function LoginWithAccount() {
     return (
@@ -9,7 +9,7 @@ export default function LoginWithAccount() {
                 или войти используя
 </Text>
             <View style={styles.iconView}>
-                {/* <SocialIcon
+                <SocialIcon
                     type="facebook"
                     onPress={() => {
                         alert('facebook');
@@ -20,9 +20,7 @@ export default function LoginWithAccount() {
                     onPress={() => {
                         alert('facebook');
                     }}
-                /> */}
-                <Image style={{ width: 53 }} source={require('../../assets/facebook.png')} />
-                <Image style={{ width: 48 }} source={require('../../assets/google.png')} />
+                />
             </View>
         </View>
     );
@@ -30,20 +28,19 @@ export default function LoginWithAccount() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: "center"
+        alignItems: "center",
+        marginTop: 20
     },
     text: {
         color: '#112545',
         fontWeight: 'bold',
-        fontSize: 20,
-        marginTop: '6%',
+        fontSize: 18,
         opacity: 0.5
     },
     iconView: {
-        marginTop: 12,
         flexDirection: 'row',
-        width: '40%',
+        width: '65%',
         justifyContent: 'space-around',
-
+        marginTop: 5
     }
 })

@@ -2,11 +2,10 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { NavigationContainer } from '@react-navigation/native'
-import Files from './Files'
 import MainCard from './MainCard'
 import Profile from './Profile'
 import { FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
-
+import NewsStack from '../LoginPage/Navigation/NewsStack'
 const Tab = createBottomTabNavigator();
 export default function AppTabs() {
     return (
@@ -14,7 +13,7 @@ export default function AppTabs() {
             screenOptions={({ route }) => ({
                 tabBarIcon: ({ color }) => {
                     let iconName;
-                    if (route.name === 'Files') {
+                    if (route.name === 'News') {
                         return <FontAwesome5 name="folder" size={45} color={color} />;
 
                     } else if (route.name === 'MainCard') {
@@ -47,7 +46,7 @@ export default function AppTabs() {
             }}
 
         >
-            <Tab.Screen name="Files" component={Files} />
+            <Tab.Screen name="News" component={NewsStack} />
             <Tab.Screen name="MainCard" component={MainCard} />
             <Tab.Screen name="Profile" component={Profile} />
         </Tab.Navigator>
