@@ -1,22 +1,22 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import MapView from 'react-native-maps';
 
 export default function MainCard() {
     return (
         <View style={styles.container}>
-            <Text style={styles.mainText}>MainCard.js</Text>
+            <MapView style={styles.mapStyle} />
         </View>
     )
-}
-const styles = StyleSheet.create({
+} const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: '#fff',
         alignItems: 'center',
-        backgroundColor: 'white'
+        justifyContent: 'center',
     },
-    mainText: {
-        marginTop: '50%',
-        fontSize: 20,
-        fontWeight: "bold"
-    }
-})
+    mapStyle: {
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height,
+    },
+});

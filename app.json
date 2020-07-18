@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "helpMe",
-    "slug": "helpMe",
+    "name": "FinFix",
+    "slug": "FinFix",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
