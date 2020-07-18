@@ -5,8 +5,8 @@ import NewsDetails from '../../MainContent/NewsDetails';
 
 const Stack = createStackNavigator();
 
-export default class NewsStack extends React.Component {
-    createNewsStack = () =>
+export default function NewsStack() {
+    return (
         <Stack.Navigator initialRouteName="News">
             <Stack.Screen
                 name="News"
@@ -23,8 +23,6 @@ export default class NewsStack extends React.Component {
                     headerBackTitle: 'Назад'
                 }} />
         </Stack.Navigator>
+    )
 
-    render() {
-        return this.createNewsStack();
-    }
 }

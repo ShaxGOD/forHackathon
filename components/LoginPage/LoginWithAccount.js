@@ -12,13 +12,13 @@ export default function LoginWithAccount() {
                 <SocialIcon
                     type="facebook"
                     onPress={() => {
-                        alert('facebook');
+                        alert('Тут будет логин через facebook аккаунт');
                     }}
                 />
                 <SocialIcon
                     type="google"
                     onPress={() => {
-                        alert('facebook');
+                        alert('Тут будет логин через google аккаунт');
                     }}
                 />
             </View>

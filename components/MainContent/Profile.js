@@ -4,15 +4,16 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Profile() {
     return (
         <View style={styles.container}>
-            <Text style={styles.mainText}>Profile.js</Text>
+            <Text style={styles.mainText}>Здесь будет Профиль в будущем :)</Text>
         </View>
     )
 }
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor: '#fff',
         alignItems: 'center',
-        backgroundColor: 'white'
+        justifyContent: 'center',
     },
     mainText: {
         marginTop: '50%',

@@ -9,8 +9,14 @@ const MainPicker = () => {
                 selectedValue={selectedValue}
                 onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
             >
-                <Picker.Item label="Тип" value="Степень" />
-                <Picker.Item label="JavaScript" value="js" />
+                <Picker.Item label="Категория" value="Категория" />
+                <Picker.Item label="Первая группа" value="first" />
+                <Picker.Item label="Вторая группа" value="second" />
+                <Picker.Item label="Третья группа" value="third" />
+                <Picker.Item label="Ребёнок-инвалид первой группы" value="thir" />
+                <Picker.Item label="Ребёнок-инвалид второй группы" value="third" />
+                <Picker.Item label="Ребёнок-инвалид третьей группы" value="third" />
+
             </Picker>
         </View>
     );
